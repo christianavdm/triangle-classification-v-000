@@ -12,7 +12,7 @@ class Triangle
     
     if @a > 0 && @b > 0 && @c > 0 && @a + @b > @c && @b + @c > @a && @c + @a > @b 
     
-      if @a == @b && @b == @c
+    if @a == @b && @b == @c
       :equilateral 
     elsif @a == @b || @b == @c || @c == @a 
       :isosceles 
