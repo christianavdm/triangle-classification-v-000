@@ -9,13 +9,20 @@ class Triangle
   end
   
   def kind 
-    if @a == @b && @b == @c
+    
+    if @a > 0 && @b > 0 && @c > 0 && @a + @b > @c && @b + @c > @a && @c + @a > @b 
+    
+      if @a == @b && @b == @c
       :equilateral 
     elsif @a == @b || @b == @c || @c == @a 
       :isosceles 
     else 
       :scalene
     end
+  end
+  
+  def TriangleError < StandardError 
+    
   end
   
 end
